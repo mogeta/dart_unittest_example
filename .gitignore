@@ -3,7 +3,7 @@
 .idea/
 .settings/
 
-bin/docs/
-bin/packages/
-bin/test/packages/
-bin/pubspec.lock
+docs/
+packages/
+test/packages/
+pubspec.lock
