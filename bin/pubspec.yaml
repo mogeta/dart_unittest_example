@@ -1,0 +1,7 @@
+name: quicksort
+description: A sample command-line application
+dependencies:
+  unittest: any
+
+#dependencies:
+#  unittest: any
