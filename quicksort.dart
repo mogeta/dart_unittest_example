@@ -13,8 +13,8 @@ int _partition(List array, int left, int right, int pivotIndex) {
     if (array[i] < pivotValue) {
       var tmp = array[i];
       array[i] = array[storeIndex];
-      array[storeIndex] = tmp;
-      //array[storeIndex++] = tmp;
+      //array[storeIndex] = tmp;
+      array[storeIndex++] = tmp;
     }
   }
   var tmp = array[storeIndex];
@@ -25,8 +25,8 @@ int _partition(List array, int left, int right, int pivotIndex) {
 
 void _quickSort(List array, int left, int right) {
   if (left < right) {
-    int pivotIndex = left + ((right-left) / 2);
-    //int pivotIndex = left + ((right-left) / 2).toInt();
+    //int pivotIndex = left + ((right-left) / 2);
+    int pivotIndex = left + ((right-left) / 2).toInt();
     pivotIndex = _partition(array, left, right, pivotIndex);
     _quickSort(array, left, pivotIndex-1);
     _quickSort(array, pivotIndex+1, right);
